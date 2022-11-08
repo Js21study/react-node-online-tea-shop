@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+.header {
+    position: relative;
+}
+
+
+
+.header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+    color: #fafafa;
+    font-size: x-large;
+    margin: 0 15px;
+}
+
+.header .shop-cart-button:hover,
+.header .shop-cart-button.active {
+    color: #d9c000;
+    transform: scale(1.5);
+}
+
+
+.header .shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    background: #fafafa;
+    -webkit-box-shadow: -2px 6px 16px 5px rgba(0,0,0,0.26); 
+    box-shadow: -2px 6px 16px 5px rgba(0,0,0,0.26);
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.header .shop-cart .item .empty h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.header .shop-cart .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.header .shop-cart .item img {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+.header .shop-cart .item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.header .shop-cart .item p {
+    color: #797979;
+    font-weight: 600;
+}
+
+.basket-delete-trash,
+.header .shop-cart .item .delete-icon {
+    margin: 0 10px;
+    color: #ca5252;
+    float: right;
+    position: relative;
+    
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+.basket-delete-trash,
+.header .shop-cart .item .delete-icon:hover {
+    
+    color: #5a1515;
+    transform: scale(1.5);
+}
+
+.header .shop-cart .summa {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.closeBusket {
+    color: "red";
+    margin-left: 50px;
+    font-size: x-large;
+    font-weight: 900;
+    cursor: pointer;
+    color: #5a1515;
+
+}
+
+
+.summa-basket {
+    
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.strelka{
+    position: relative;
+    cursor: pointer;
+    color: #20aeb6;
+    font-weight: 800;
+}
+
+.strelka:hover{
+    color: #b8a40d;
+}
+
+.strelka:hover .strelka-right{
+    position: absolute;
+   
+}
